@@ -1,0 +1,96 @@
+body {
+    background-color: #2e4555;
+}
+
+.main {
+    text-align: center;
+    padding: 20px 20px 30px 30px;
+}
+
+.mainPlay {
+    background-color: #5b7282;
+    border-radius: 100px;
+    color: #ede2dc;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 600;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.mainPlay:hover {
+    transform: scale(1.05);
+}
+
+.intervalButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    padding: 1%;
+}
+
+.intervals {
+    background: transparent;
+    border: 2px solid #e77f64;
+    border-radius: 15px;
+    color: #e77f64;;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    min-height: 50px;
+    min-width: 110px;
+    outline: none;
+    text-align: center;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+
+}
+
+.intervals:hover {
+    color: #fff;
+    background-color: #555a6b;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.statusBox {
+    text-align: center;
+    padding: 3% 3%;
+}
+
+#intervalStatus {
+    color: #ede2dc;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#progress-container {
+    height: 15px;
+    border-radius: 7px;
+    background-color: #5b7282;
+    position: relative;
+}
+
+#progress-bar {
+    position: absolute;
+    border-radius: 7px;
+    background-color: #e77f64;
+    height: 100%;
+    width: 0%;
+    transition: 0.4s ease;
+}
